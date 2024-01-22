@@ -1,0 +1,22 @@
+:root {
+    --Main-Color--: #F7323F;
+    --Sub-Color--: #1273E4;
+    
+    --Black--: #000000;
+    --gray--: #99999A;
+    --pink--: #F5F5F5;
+    --White--: #ffffff;
+
+    --YJ-Font--: 'yg-jalnan';
+    --JG-Font--: 'JalnanGothic';
+
+    --nav-gap--: 3rem;
+    --radius-small--: 10px;
+    --btn-padding--:5px 10px;
+    --text-padding--:0px 10px;
+
+    --font-size1--:40px;
+    --font-size2--:30px;
+    --font-size3--:20px;
+    --font-size4--:16px;
+}
