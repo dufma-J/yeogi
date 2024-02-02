@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeogi</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
     <header>
         <div class="header-inner flex">
-            <h1><a href="#"><img src="" alt="logo-header"></a></h1>
-            <nav>
+            <h1><a href="#"><img src="./images/Asset 4.png" alt="logo-header"></a></h1>
+            <nav class="flex">
                 <ul class="flex">
                     <li><a href="#">비회원 예약조회</a></li>
                     <li><a href="#">고객센터</a></li>
                     <li><a href="#" class="btn">로그인</a></li>
+                </ul>
+                <a class="bar" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <ul class="bar-menu">
+                    <li><a href="#">비회원 예약조회</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">로그인</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,61 +41,572 @@
             </div>
             <div class="search flex">
                 <ul class="flex">
-                    <li>
+                    <li class="pc">
                         <label for="search">여행지</label>
                         <input type="text" id="search1" class="search-input" placeholder="강릉">
-                        <div class="search-option">
-                            <ul><p>최근 검색 조건</p>
+                        <div class="search-option pop1">
+                            <ul>
+                                <p>최근 검색 조건 <a href="#">전체삭제</a></p>
                                 <li><a href="#">서울</a></li>
                             </ul>
-                            <ul><p>여기어때 검색 순위</p>
+                            <ol>
+                                <p>여기어때 검색 순위</p>
                                 <li><a href="#">강릉</a></li>
                                 <li><a href="#">부산</a></li>
                                 <li><a href="#">경주</a></li>
                                 <li><a href="#">여수</a></li>
                                 <li><a href="#">속초</a></li>
                                 <li><a href="#">제주도</a></li>
-                            </ul>
+                            </ol>
                         </div>
                     </li>
-                    <li>
+                    <li class="pc">
                         <label for="search">날짜</label>
-                        <div class="flex search2-wrap">
+                        <div class="flex search-wrap">
                             <input type="date" id="search2" class="search-input" value="2024-12-28">
                             <p>-</p>
                             <input type="date" id="search2" class="search-input" value="2024-12-28">
                         </div>
                     </li>
-                    <li>
+                    <li class="pc">
                         <label for="search">인원 수</label>
                         <input type="search" id="search3" class="search-input" placeholder="2명">
-                        <div class="search-option">
-                            <ul><p>최근 검색 조건</p>
-                                <li><a href="#">서울</a></li>
-                            </ul>
-                            <ul><p>여기어때 검색 순위</p>
-                                <li><a href="#">강릉</a></li>
-                                <li><a href="#">부산</a></li>
-                                <li><a href="#">경주</a></li>
-                                <li><a href="#">여수</a></li>
-                                <li><a href="#">속초</a></li>
-                                <li><a href="#">제주도</a></li>
-                            </ul>
+                        <div class="search-option pop3">
+                            <p>유아 및 아동도 인원수에<br />포함해주세요.</p>
+                            <div class="pop3-btn">
+                                <a href="#" class="minus">-</a>
+                                <p class="num">2</p>
+                                <a href="#" class="plus">+</a>
+                            </div>
                         </div>
+                    </li>
+                    <li class="mobile">
+                        <input type="search" id="search4" class="search-input" placeholder="여행지나 숙소를 검색해주세요.">
                     </li>
                 </ul>
                 <a href="#" class="btn">검색</a>
             </div>
-            <div><a href="#">화살표</a></div>
+            <div class="arrow"><a href="#"><img src="./images/arrow-down-solid.svg" alt="arrow-down"></a></div>
+        </div>
+        <div class="float-contents">
+            <img src="./images/Vector (1).png" alt="">
+            <img src="./images/Vector (2).png" alt="">
         </div>
     </section>
     <section class="page2">
-        <h2>이벤트</h2>
+        <div class="page2-inner">
+            <div class="page2-text">
+                <h2>이벤트</h2>
+            </div>
+            <div class="events">
+                <div class="swiper2 mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/banner1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/banner2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/banner3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/banner3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/banner3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/banner3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="page3">
+        <div class="page3-inner">
+            <div class="popular">
+                <div class="popular-btn">
+                    <a href="#" class="on">국내 인기 여행지</a>
+                    <a href="#">해외 인기 여행지</a>
+                </div>
+                <div class="popular-slide">
+                    <div class="swiper mySwiper on">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">제주도</span>
+                                    <span>오사카</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">서울</span>
+                                    <span>도쿄 / 동경</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">부산</span>
+                                    <span>나트랑 / 나짱</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">강릉</span>
+                                    <span>후쿠오카</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">인천</span>
+                                    <span>다낭</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">경주</span>
+                                    <span>괌</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">해운대</span>
+                                    <span>싱가포르</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">가평</span>
+                                    <span>방콕</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">여수</span>
+                                    <span>교토</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <span class="on">속초</span>
+                                    <span>코타키나발루</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel">
+                <div class="hotel-menu">
+                    <div class="hotel-text">
+                        <div class="hotel-title hot on">
+                            <h2>이번 주 HOT 인기 펜션</h2>
+                            <h3>좋은 곳, 즐거운 휴가. 이번주 HOT 인기 펜션!</h3>
+                        </div>
+                        <div class="hotel-title check">
+                            <h2>오늘 체크인 호텔 특가</h2>
+                            <h3>나를 위한 근사한 휴가, 오늘 체크인 하면 특가!</h3>
+                        </div>
+                    </div>
+                    <div class="hotel-btn">
+                        <a href="#" class="hot on">오늘 체크인 호텔 특가 보기</a>
+                        <a href="#" class="check">이번 주 HOT 인기 펜션 보기</a>
+                    </div>
+                </div>
+                <div class="hotel-list">
+                    <div class="swiper3 mySwiper3 hot on">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>가평 오버더마운틴</p>
+                                        <p>가평군</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>143,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>제주 와흘 팽나무집</p>
+                                        <p>제주시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>97,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>화천 스카이밸리 펜션</p>
+                                        <p>화천군</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>148,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>영종도 블로우션펜션</p>
+                                        <p>중구</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>120,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>평창 화이트캐빈펜션</p>
+                                        <p>평창군</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>141,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>무주 센트럴리조트</p>
+                                        <p>무주군</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>240,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>괴산 사담스테이</p>
+                                        <p>괴산군</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>188,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>여수 엔펜션</p>
+                                        <p>여수시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>44,500</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper3 mySwiper3 check">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>세인트존스 호텔</p>
+                                        <p>강릉시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>159,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>스카이베이호텔 경포</p>
+                                        <p>강릉시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>242,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>호텔 리베라</p>
+                                        <p>강남구</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>119,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>신라스테이 구로</p>
+                                        <p>동작구</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>80,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>동해오션시티 레지던스호텔</p>
+                                        <p>동해시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>70,150</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>더 스테이 클래식 호텔 명동</p>
+                                        <p>중구</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>99,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>신라스테이 동탄</p>
+                                        <p>화성시</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>76,750</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="flex">
+                                    <div class="left-text">
+                                        <p>스탠포드 호텔 서울</p>
+                                        <p>마포구</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p>95,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recommend flex">
+        <div class="recommend-first"></div>
+        <div class="slide-menu">
+            <p>인기 추천 숙소</p>
+            <ul>
+                <li><a href="#" class="on">전체</a></li>
+                <li><a href="#" class="motel">모텔</a></li>
+                <li><a href="#" class="hotel2">호텔·리조트</a></li>
+                <li><a href="#" class="rental">펜션·풀빌라</a></li>
+                <li><a href="#">프리미엄 블랙</a></li>
+                <li><a href="#">캠핑·글램핑</a></li>
+                <li><a href="#">홈&빌라</a></li>
+                <li><a href="#">게하·한옥</a></li>
+            </ul>
+        </div>
+        <div class="recommend-list">
+            <div class="swiper4 mySwiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_1.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">두짓 비치 리조트 괌</div>
+                                <div class="flex">
+                                    <div class="star">8.7</div>
+                                    <p class="evaluation">7,760</p>
+                                </div>
+                                <p class="money">274,119</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_2.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">더 츠바키 타워</div>
+                                <div class="flex">
+                                    <div class="star">9.0</div>
+                                    <p class="evaluation">1,974</p>
+                                </div>
+                                <p class="money">342,646</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_3.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">홀리데이 리조트 앤 스파</div>
+                                <div class="flex">
+                                    <div class="star">7.3</div>
+                                    <p class="evaluation">4,591</p>
+                                </div>
+                                <p class="money">161,762</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_4.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">로얄 오키드 괌 호텔</div>
+                                <div class="flex">
+                                    <div class="star">7.0</div>
+                                    <p class="evaluation">2,520</p>
+                                </div>
+                                <p class="money">142,556</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_5.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">서울신라호텔</div>
+                                <div class="flex">
+                                    <div class="star">9.8</div>
+                                    <p class="evaluation">257</p>
+                                </div>
+                                <p class="money">585,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_6.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">노보텔 앰배서더 서울 용산</div>
+                                <div class="flex">
+                                    <div class="star">9.2</div>
+                                    <p class="evaluation">1,563</p>
+                                </div>
+                                <p class="money">192,500</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_7.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">페어필드 바이 메리어트 서울</div>
+                                <div class="flex">
+                                    <div class="star">9.3</div>
+                                    <p class="evaluation">5,089</p>
+                                </div>
+                                <p class="money">115,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/hotel_8.jpg" alt="">
+                            </div>
+                            <div class="swiper4-text">
+                                <div class="Hname">더 스테이트 선유 호텔</div>
+                                <div class="flex">
+                                    <div class="star">9.4</div>
+                                    <p class="evaluation">3,962</p>
+                                </div>
+                                <p class="money">113,000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pag4">
+        <div class="page4-wrap">
+            <div class="swiper mySwiper5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/black1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/black2.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/black3.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/black3.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/black4.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/black5.jpeg" />
+                    </div>
+                </div>
+            </div>
+            <div class="myswiper5-text">
+                <div class="my5-1">
+                    <h2>이번주 블랙 PICK</h2>
+                    <p>나를 위한 근사한 휴가, 여기어때 프리미엄 숙소</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrap">
+            <div class="sect1 flex">
+                <div class="sect1-1">
+                    <h4>고객센터</h4>
+                    <p>오전 9시 - 새벽 3시 운영</p>
+                    <div class="footer-btn">
+                        <a href="#">1670 - 6250</a>
+                        <a href="#">카카오 문의</a>
+                    </div>
+                </div>
+                <div class="sect1-2 flex">
+                    <div class="sect1-2-in">
+                        <h4>회사</h4>
+                        <a href="#">회사소개</a>
+                    </div>
+                    <div class="sect1-2-in">
+                        <h4>서비스</h4>
+                        <a href="#">공지사항</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">기업 출장/복지 서비스 문의</a>
+                    </div>
+                    <div class="sect1-2-in">
+                        <h4>혜택</h4>
+                        <a href="#">트립홀릭 혜택 안내</a>
+                        <a href="#">엘리트 혜택 안내</a>
+                        <a href="#">비즈니스 회원 혜택 안내</a>
+                        <a href="#">여기어때 상품권 조회</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sect2">
+                <p>(주)여기어때컴퍼니<br />
+                    주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인<br />
+                    전자우편주소 : help@goodchoice.kr | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 |
+                    호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br />
+                    (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+                <ul class="flex">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">소비자 분쟁해결 기준</a></li>
+                    <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="./script/index.js"></script>
 </body>

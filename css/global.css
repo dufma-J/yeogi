@@ -11,7 +11,9 @@
     --JG-Font--: 'JalnanGothic';
 
     --nav-gap--: 3rem;
+    --img-gap--: 1.1rem;
     --radius-small--: 10px;
+    --radius-middle--: 15px;
     --btn-padding--:5px 10px;
     --text-padding--:0px 10px;
 
@@ -19,4 +21,5 @@
     --font-size2--:30px;
     --font-size3--:20px;
     --font-size4--:16px;
+    --font-size5--:13px;
 }
