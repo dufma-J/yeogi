@@ -126,7 +126,7 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints:{
         482:{
             direction: "horizontal",
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         912:{
@@ -247,24 +247,27 @@ $('.slide-menu ul li a').click(function(e){
 })
 
 var swiper5 = new Swiper(".mySwiper5", {
-    effect: "coverflow",
-    grabCursor: false,
-    centeredSlides: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
     loop:true,
+    speed:1500,
     autoplay:{
         delay:2000,
         disableOnInteraction: false,
     },
-    slidesPerView: "auto",
-    coverflowEffect: {
-    rotate: 50,
-    stretch: -15,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-    },
-    pagination: {
-    el: ".swiper-pagination",
+    breakpoints:{
+        482:{
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        912:{
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1160:{
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
     },
 });
 

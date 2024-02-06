@@ -55,7 +55,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
     overflow: hidden;
 }
 
@@ -410,13 +409,13 @@ section.page1 {
     height: 100%;
 }
 
-.swiper .swiper-slide {
+.mySwiper .swiper-slide {
     height: 30%;
     text-align: center;
     font-size: var(--font-size3--);
     border-radius: var(--radius-middle--);
     filter: grayscale(0.3);
-    background: url(../images/rebe-adelaida-zunQwMy5B6M-unsplash.jpg);
+    background-color: #FFAD0A;
     background-position: center;
     background-size: cover;
 }
@@ -433,29 +432,127 @@ section.page1 {
 }
 
 /* 국내 여행지 */
-.swiper.on .swiper-slide:nth-child(1) {
-    background: url(../images/louis-magnotti-YvCg5X3pWzc-unsplash.jpg);
+.swiper.on #one {
+    background: url(../images/po_k01.png);
     background-position: center;
     background-size: cover;
 }
 
-.swiper.on .swiper-slide:nth-child(2) {
-    background: url(../images/zequn-gui-xVFS3meofYM-unsplash.jpg);
+.swiper.on #two {
+    background: url(../images/po_k02.png);
     background-position: center;
     background-size: cover;
 }
 
-.swiper.on .swiper-slide:nth-child(3) {
-    background: url(../images/jimmy-moon-KpIgjFZmp0E-unsplash.jpg);
+.swiper.on #three {
+    background: url(../images/po_k03.png);
     background-position: center;
     background-size: cover;
 }
 
-.swiper.on .swiper-slide:nth-child(5) {
-    background: url(../images/zequn-gui-xVFS3meofYM-unsplash.jpg);
+.swiper.on #four {
+    background: url(../images/po_k04.png);
     background-position: center;
     background-size: cover;
 }
+
+.swiper.on #five {
+    background: url(../images/po_k05.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper.on #six {
+    background: url(../images/po_k06.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper.on #seven {
+    background: url(../images/po_k07.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper.on #eight {
+    background: url(../images/po_k08.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper.on #nine {
+    background: url(../images/po_k09.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper.on #ten {
+    background: url(../images/po_k10.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* 해외 여행지 */
+.swiper #one {
+    background: url(../images/po_f01.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #two {
+    background: url(../images/po_f02.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #three {
+    background: url(../images/po_f03.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #four {
+    background: url(../images/po_f04.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #five {
+    background: url(../images/po_f05.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #six {
+    background: url(../images/po_f06.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #seven {
+    background: url(../images/po_f07.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #eight {
+    background: url(../images/po_f08.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #nine {
+    background: url(../images/po_f09.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper #ten {
+    background: url(../images/po_f10.png);
+    background-position: center;
+    background-size: cover;
+}
+
 
 .swiper .swiper-slide span {
     display: none;
@@ -849,7 +946,7 @@ section.recommend {
 
 /* ---------- page4 ---------- */
 .page4-wrap {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -858,26 +955,27 @@ section.recommend {
 }
 
 section.pag4 .swiper {
-    width: 59%;
-    height: 60%;
-    margin-left: 0px;
-    padding: 50px 0px;
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    /* padding: 50px 0px; */
     overflow: hidden;
 }
 
-.mySwiper5 .swiper-slide {
+/* .mySwiper5 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 450px;
+    width: 60vw;
+    height: 60vw;
     margin: auto;
 }
 
 .mySwiper5 .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 50vw;
+    height: 60vw;
     border-radius: var(--radius-middle--);
-}
+} */
 
 .myswiper5-text {
     width: 30%;
@@ -893,12 +991,12 @@ section.pag4 .swiper {
 /* ---------- footer ---------- */
 footer {
     width: 100%;
-    height: 500px;
     background-color: var(--pink--);
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0px;
 }
 
 footer .footer-wrap {
